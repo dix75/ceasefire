@@ -4,9 +4,10 @@
 #
 #-------------------------------------------------
 
-TEMPLATE            = app
+TEMPLATE            = lib
 TARGET              = cf
 PRECOMPILED_HEADER  = cf_pch.h
+DEFINES            += CEASEFIRE_LIBRARY
 
 CF_PATH             = $$PWD/ceasefire/
 CATCH_PATH          = $$PWD/catch2/
@@ -25,7 +26,10 @@ QMAKE_CXXFLAGS     += -DQT_NO_CAST_TO_ASCII        \
                       -DQT_NO_CAST_FROM_BYTEARRAY  \
                       -DQT_USE_QSTRINGBUILDER      \
                       -DD_SCL_SECURE_NO_WARNINGS
-SOURCES += \
-    main.cpp
+SOURCES +=
 
-HEADERS +=
+HEADERS += \
+    cf_pch.h \
+    $$CF_PATH\ceasefire_global.h \
+    $$CF_PATH\ceasefire.h
+
