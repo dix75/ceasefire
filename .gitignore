@@ -1,0 +1,54 @@
+### Project ###
+
+debug/
+release/
+/build/
+/bin/
+.ropeproject/
+__history
+*.orig
+
+### Visio ###
+*.~vsd
+
+### Qt ###
+# C++ objects and libs
+*.slo
+*.lo
+*.o
+*.a
+*.qm
+*.la
+*.lai
+*.so
+*.dll
+*.dylib
+
+# Qt-es
+/.qmake.cache
+/.qmake.stash
+*.pro.user
+*.pro.user.*
+*.qbs.user
+*.qbs.user.*
+*.moc
+moc_*.cpp
+qrc_*.cpp
+Makefile*
+*build-*
+.vs
+/out
+build/
+
+# QtCreator
+*.autosave
+
+# QtCtreator Qml
+*.qmlproject.user
+*.qmlproject.user.*
+
+# QtCtreator CMake
+CMakeLists.txt.user*
+
+# SonarQube
+.scannerwork
